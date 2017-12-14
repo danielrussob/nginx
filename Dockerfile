@@ -18,7 +18,7 @@ RUN echo "upstream php-upstream { server ${PHP_UPSTREAM_CONTAINER}:${PHP_UPSTREA
 
 RUN mkdir /etc/nginx/sites-available
 ADD ./sites/default.conf /etc/nginx/sites-available/
-ADD ./sites/magento.conf /etc/nginx/sites-available/
+#ADD ./sites/magento.conf /etc/nginx/sites-available/
 
 CMD ["nginx"]
 
